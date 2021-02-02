@@ -1,0 +1,12 @@
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.deps.json
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.dll
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.pdb
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Configuration.Abstractions.dll
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Configuration.Abstractions.xml
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.csprojAssemblyReference.cache
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.csproj.CoreCompileInputs.cache
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.AssemblyInfoInputs.cache
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.AssemblyInfo.cs
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.csproj.CopyComplete
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.dll
+c:\Users\abhimanyuku\source\repos\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.pdb
