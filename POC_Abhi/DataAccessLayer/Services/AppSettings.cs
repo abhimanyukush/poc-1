@@ -2,11 +2,11 @@
 
 namespace DataAccessLayer.Services
 {
-    public class SqlHelper : ISqlHelper
+    public class AppSettings : IAppSettings
     {
         private readonly IConfiguration _config;
         public string Connectionstring { get; set; }
-        public SqlHelper(IConfiguration configuration)
+        public AppSettings(IConfiguration configuration)
         {
             _config = configuration;
             Connectionstring = _config.GetSection("ConnectionStrings:DefaultConnection").Value;

@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using POC_Abhi.Filters;
+using POC_Abhi.Middlewares;
 
 namespace POC_Abhi
 {
@@ -20,8 +22,11 @@ namespace POC_Abhi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-            services.AddScoped<ISqlHelper, SqlHelper>();
+            services.AddMvc(options => {
+                options.Filters.Add(typeof(ValidateModelStateAttribute));
+                options.Filters.Add(typeof(CustomExceptionHandler));
+            });
+            services.AddScoped<IAppSettings,AppSettings>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IEmployeeService, EmployeeService>();
 
@@ -33,15 +38,22 @@ namespace POC_Abhi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
+            }            
             else
             {
                 app.UseHsts();
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
-                        
+            app.UseStatusCodePages();
+            //Custom Middleware
+            //app.UseMiddleware<MyMiddleware>();
+            app.Map("/", endpoints =>
+             {
+                 endpoints.UseMiddleware<MyMiddleware>();
+                 endpoints.UseMiddleware<MyCustomMiddleware>();
+             });
+            app.UseMvc();            
         }
     }
 }

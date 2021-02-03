@@ -1,6 +1,6 @@
 ﻿namespace DataAccessLayer.Services
 {
-    public interface ISqlHelper
+    public interface IAppSettings
     {
         string Connectionstring { get; set; }
     }

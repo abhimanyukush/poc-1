@@ -1,5 +1,6 @@
-﻿using Dapper;
-using DataAccessLayer.Model;
+﻿using Common.Model;
+using Dapper;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,15 +11,19 @@ namespace DataAccessLayer.Services
 {
     public class EmployeeService : IEmployeeService
     {
-        private readonly ISqlHelper _sqlHelper;
+        private readonly IAppSettings _sqlHelper;
+        private readonly ILogger<EmployeeService> _logger;
+        //public IConfiguration Configuration _configuration;
 
         /// <summary>
         /// initialize constructor
         /// </summary>
         /// <param name="sqlHelper"></param>
-        public EmployeeService(ISqlHelper sqlHelper)
+        public EmployeeService(IAppSettings sqlHelper, ILogger<EmployeeService> logger)
         {
             _sqlHelper = sqlHelper;
+            _logger = logger;
+            //var conn = _configuration["ConnectionStrings:DefaultConnection"];
         }
 
         /// <summary>
@@ -37,7 +42,7 @@ namespace DataAccessLayer.Services
             }
             catch (Exception ex)
             {
-
+                _logger.LogInformation(ex,"Error Occured in EmployeeService.GetAllEmployee!!");
                 throw;
             }
         }
@@ -49,22 +54,46 @@ namespace DataAccessLayer.Services
         /// <returns>employee object</returns>
         public EmployeeModel GetEmployee(int id)
         {
-            EmployeeModel employee = null;
             try
             {
                 using (IDbConnection db = new SqlConnection(_sqlHelper.Connectionstring))
                 {
                     using (var result = db.QueryMultiple(Constant.SP_FETCH_EMPLOYEE_BY_ID, new { id = id }, commandType: CommandType.StoredProcedure))
                     {
-                        employee = result.Read<EmployeeModel>().FirstOrDefault();
+                        return result.Read<EmployeeModel>().FirstOrDefault();
                     }
                 }
             }
             catch (Exception ex)
             {
+                _logger.LogInformation(ex,"Error Occured in EmployeeService.GetEmployee!!");
+                throw;
+            }             
+        }
 
+        /// <summary>
+        /// Fetch employee based on id and name
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public EmployeeModel GetEmployeeByIdAndName(int id, string name)
+        {
+            try
+            {
+                using (IDbConnection db = new SqlConnection(_sqlHelper.Connectionstring))
+                {
+                    using (var result = db.QueryMultiple(Constant.SP_FETCH_EMPLOYEE_BY_ID_AND_NAME, new { id = id, name = name }, commandType: CommandType.StoredProcedure))
+                    {
+                        return result.Read<EmployeeModel>().FirstOrDefault();
+                    }
+                }
             }
-            return employee;
+            catch (Exception ex)
+            {
+                _logger.LogInformation(ex, "Error Occured in EmployeeService.GetEmployeeByIdAndName!!");
+                throw;
+            }
         }
 
         /// <summary>
@@ -96,7 +125,7 @@ namespace DataAccessLayer.Services
             }
             catch (Exception ex)
             {
-
+                _logger.LogInformation(ex, "Error Occured in EmployeeService.AddEmployee!!");
                 throw;
             }
 
@@ -120,7 +149,7 @@ namespace DataAccessLayer.Services
             }
             catch (Exception ex)
             {
-
+                _logger.LogInformation(ex, "Error Occured in EmployeeService.UpdateEmployee!!");
                 throw;
             }
         }
@@ -141,8 +170,10 @@ namespace DataAccessLayer.Services
             }
             catch (Exception ex)
             {
+                _logger.LogInformation(ex, "Error Occured in EmployeeService.DeleteEmployee!!");
                 throw;
             }            
         }
+                
     }
 }

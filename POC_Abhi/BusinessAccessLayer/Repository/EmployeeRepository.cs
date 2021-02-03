@@ -1,5 +1,6 @@
-﻿using DataAccessLayer.Model;
+﻿using Common.Model;
 using DataAccessLayer.Services;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 
@@ -8,14 +9,16 @@ namespace BusinessAccessLayer.Repository
     public class EmployeeRepository : IEmployeeRepository
     {
         private readonly IEmployeeService _service;
+        private readonly ILogger<EmployeeRepository> _logger;
 
         /// <summary>
         /// initialize constructor
         /// </summary>
         /// <param name="service"></param>
-        public EmployeeRepository(IEmployeeService service)
+        public EmployeeRepository(IEmployeeService service,ILogger<EmployeeRepository> logger)
         {
             _service = service;
+            _logger = logger;
         }
         /// <summary>
         /// Fetch all the employees from database
@@ -25,15 +28,17 @@ namespace BusinessAccessLayer.Repository
         {
             try
             {
-                var employees = _service.GetAllEmployee();
+                 return _service.GetAllEmployee();
 
-                return employees;
+                
             }
             catch(Exception ex)
             {
+                _logger.LogInformation(ex,"Error Occured in EmployeeRepository.GetAllEmployee!!");
                 throw;
             }
         }
+
         /// <summary>
         /// Get employee based on id
         /// </summary>
@@ -43,15 +48,36 @@ namespace BusinessAccessLayer.Repository
         {
             try
             {
-                var employee =_service.GetEmployee(id);
+                return _service.GetEmployee(id);
 
-                return employee;
             }
             catch (Exception ex)
             {
+                _logger.LogInformation(ex,"Error Occured in EmployeeRepository.GetEmployee!!");
                 throw;
             }
         }
+
+        /// <summary>
+        /// Fetch employee based on id and name
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public EmployeeModel GetEmployeeByIdAndName(int id, string name)
+        {
+            try
+            {
+                return _service.GetEmployeeByIdAndName(id,name);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation(ex, "Error Occured in EmployeeRepository.GetEmployeeByIdAndName!!");
+                throw;
+            }
+        }
+
         /// <summary>
         /// Add new employee into the database
         /// </summary>
@@ -61,15 +87,16 @@ namespace BusinessAccessLayer.Repository
         {
             try
             {
-                var id= _service.AddEmployee(model);
+                return _service.AddEmployee(model);
 
-                return id;
             }
             catch (Exception ex)
             {
+                _logger.LogInformation(ex,"Error Occured in EmployeeRepository.AddEmployee!!");
                 throw;
             }
         }
+
         /// <summary>
         /// update employee based on id
         /// </summary>
@@ -80,15 +107,16 @@ namespace BusinessAccessLayer.Repository
         {
             try
             {
-                var updatedId =_service.UpdateEmployee(id, name);
+                return _service.UpdateEmployee(id, name);
 
-                return updatedId;
             }
             catch (Exception ex)
             {
+                _logger.LogInformation(ex,"Error Occured in EmployeeRepository.UpdateEmployee!!");
                 throw;
             }
         }
+
         /// <summary>
         /// delete employee based on id
         /// </summary>
@@ -98,14 +126,15 @@ namespace BusinessAccessLayer.Repository
         {
             try
             {
-                var deletedId = _service.DeleteEmployee(id);
+                return _service.DeleteEmployee(id);
 
-                return deletedId;
             }
             catch (Exception ex)
             {
+                _logger.LogInformation(ex,"Error Occured in EmployeeRepository.DeleteEmployee!!");
                 throw;
             }
         }
+               
     }
 }

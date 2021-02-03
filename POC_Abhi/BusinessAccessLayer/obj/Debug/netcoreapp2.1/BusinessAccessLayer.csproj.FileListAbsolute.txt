@@ -12,3 +12,17 @@ c:\Users\abhimanyuku\source\repos\POC_Abhi\BusinessAccessLayer\obj\Debug\netcore
 c:\Users\abhimanyuku\source\repos\POC_Abhi\BusinessAccessLayer\obj\Debug\netcoreapp2.1\BusinessAccessLayer.csproj.CopyComplete
 c:\Users\abhimanyuku\source\repos\POC_Abhi\BusinessAccessLayer\obj\Debug\netcoreapp2.1\BusinessAccessLayer.dll
 c:\Users\abhimanyuku\source\repos\POC_Abhi\BusinessAccessLayer\obj\Debug\netcoreapp2.1\BusinessAccessLayer.pdb
+D:\POC\POC_Abhi\BusinessAccessLayer\bin\Debug\netcoreapp2.1\BusinessAccessLayer.deps.json
+D:\POC\POC_Abhi\BusinessAccessLayer\bin\Debug\netcoreapp2.1\BusinessAccessLayer.dll
+D:\POC\POC_Abhi\BusinessAccessLayer\bin\Debug\netcoreapp2.1\BusinessAccessLayer.pdb
+D:\POC\POC_Abhi\BusinessAccessLayer\bin\Debug\netcoreapp2.1\Common.dll
+D:\POC\POC_Abhi\BusinessAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.dll
+D:\POC\POC_Abhi\BusinessAccessLayer\bin\Debug\netcoreapp2.1\DataAccessLayer.pdb
+D:\POC\POC_Abhi\BusinessAccessLayer\bin\Debug\netcoreapp2.1\Common.pdb
+D:\POC\POC_Abhi\BusinessAccessLayer\obj\Debug\netcoreapp2.1\BusinessAccessLayer.csprojAssemblyReference.cache
+D:\POC\POC_Abhi\BusinessAccessLayer\obj\Debug\netcoreapp2.1\BusinessAccessLayer.csproj.CoreCompileInputs.cache
+D:\POC\POC_Abhi\BusinessAccessLayer\obj\Debug\netcoreapp2.1\BusinessAccessLayer.AssemblyInfoInputs.cache
+D:\POC\POC_Abhi\BusinessAccessLayer\obj\Debug\netcoreapp2.1\BusinessAccessLayer.AssemblyInfo.cs
+D:\POC\POC_Abhi\BusinessAccessLayer\obj\Debug\netcoreapp2.1\BusinessAccessLayer.csproj.CopyComplete
+D:\POC\POC_Abhi\BusinessAccessLayer\obj\Debug\netcoreapp2.1\BusinessAccessLayer.dll
+D:\POC\POC_Abhi\BusinessAccessLayer\obj\Debug\netcoreapp2.1\BusinessAccessLayer.pdb
