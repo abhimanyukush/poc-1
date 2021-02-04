@@ -883,3 +883,134 @@ Parameter name: pathMatch
    at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
    at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
    at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()|url: |action: 
+2021-02-03 19:01:50.8220||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-03 19:02:14.9947||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-03 19:02:15.3200|6|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception System.ArgumentException: The path must not end with a '/'
+Parameter name: pathMatch
+   at Microsoft.AspNetCore.Builder.MapExtensions.Map(IApplicationBuilder app, PathString pathMatch, Action`1 configuration)
+   at POC_Abhi.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in D:\POC\POC_Abhi\POC_Abhi\Startup.cs:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()|url: |action: 
+2021-02-03 19:05:04.9636||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-03 19:05:06.8606||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-03 19:05:49.5356||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-03 19:05:51.6952||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-03 19:06:58.9849||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-03 19:07:10.2664||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-03 19:07:27.4930||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-03 19:07:32.0451||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-03 19:57:21.0293||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-03 19:57:30.3353||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-03 19:57:30.5131||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-03 19:57:31.1584||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-03 19:57:48.8705||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-03 19:57:48.9550||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.PostEmployee method called!!! |url: https://localhost/api/employee|action: PostEmployee
+2021-02-03 19:58:04.7484||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-03 19:58:04.7699||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-03 20:02:03.1333||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-03 20:02:04.9500||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-03 20:02:05.1382||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-03 20:02:05.7631||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-03 20:02:13.0685||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee/1|action: 
+2021-02-03 20:02:24.3465||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetEmployeeById method called!!! |url: https://localhost/api/employee/1|action: GetEmployeeById
+2021-02-03 20:02:52.2637||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee/2|action: 
+2021-02-03 20:02:58.3162||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetEmployeeById method called!!! |url: https://localhost/api/employee/2|action: GetEmployeeById
+2021-02-03 20:03:25.4294||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee/6|action: 
+2021-02-03 20:03:53.8888||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-03 20:03:55.2615||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-03 20:03:55.4356||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-03 20:03:56.0598||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-03 20:03:59.1404||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee/6|action: 
+2021-02-03 20:04:04.6498||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.UpdateEmployee method called!!! |url: https://localhost/api/employee/6|action: UpdateEmployee
+2021-02-03 20:04:04.7493||INFO|MyMiddleware|Error Occured in MyMiddleware System.InvalidOperationException: Writing to the response body is invalid for responses with status code 204.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowWritingToResponseBodyNotSupported()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WriteAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at System.IO.Stream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count)
+   at Microsoft.AspNetCore.WebUtilities.HttpResponseStreamWriter.FlushInternalAsync(Boolean flushEncoder)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at POC_Abhi.Middlewares.MyMiddleware.Invoke(HttpContext httpContext) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 29|url: https://localhost/api/employee/6|action: UpdateEmployee
+2021-02-03 20:04:04.9584|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.Internal.DefaultHttpResponse.set_ContentType(String value)
+   at POC_Abhi.Middlewares.MyMiddleware.HandleExceptionMessageAsync(HttpContext context, Exception exception) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 39
+   at POC_Abhi.Middlewares.MyMiddleware.Invoke(HttpContext httpContext) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: https://localhost/api/employee/6|action: UpdateEmployee
+2021-02-03 20:04:04.9721|2|WARN|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|The response has already started, the error page middleware will not be executed. |url: https://localhost/api/employee/6|action: UpdateEmployee
+2021-02-03 20:04:04.9721|13|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM68A2U19TGR", Request id "0HM68A2U19TGR:00000002": An unhandled exception was thrown by the application. System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.Internal.DefaultHttpResponse.set_ContentType(String value)
+   at POC_Abhi.Middlewares.MyMiddleware.HandleExceptionMessageAsync(HttpContext context, Exception exception) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 39
+   at POC_Abhi.Middlewares.MyMiddleware.Invoke(HttpContext httpContext) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)|url: https://localhost/api/employee/6|action: UpdateEmployee
+2021-02-03 20:04:11.5862||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-03 20:04:11.5862||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-03 20:04:21.0326||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee/6|action: 
+2021-02-03 20:04:25.4250||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.UpdateEmployee method called!!! |url: https://localhost/api/employee/6|action: UpdateEmployee
+2021-02-03 20:04:25.4661||INFO|MyMiddleware|Error Occured in MyMiddleware System.InvalidOperationException: Writing to the response body is invalid for responses with status code 204.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowWritingToResponseBodyNotSupported()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.WriteAsync(ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at System.IO.Stream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count)
+   at Microsoft.AspNetCore.WebUtilities.HttpResponseStreamWriter.FlushInternalAsync(Boolean flushEncoder)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at POC_Abhi.Middlewares.MyMiddleware.Invoke(HttpContext httpContext) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 29|url: https://localhost/api/employee/6|action: UpdateEmployee
+2021-02-03 20:04:25.4904|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.Internal.DefaultHttpResponse.set_ContentType(String value)
+   at POC_Abhi.Middlewares.MyMiddleware.HandleExceptionMessageAsync(HttpContext context, Exception exception) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 39
+   at POC_Abhi.Middlewares.MyMiddleware.Invoke(HttpContext httpContext) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: https://localhost/api/employee/6|action: UpdateEmployee
+2021-02-03 20:04:25.4904|2|WARN|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|The response has already started, the error page middleware will not be executed. |url: https://localhost/api/employee/6|action: UpdateEmployee
+2021-02-03 20:04:25.4904|13|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM68A2U19TGQ", Request id "0HM68A2U19TGQ:00000004": An unhandled exception was thrown by the application. System.InvalidOperationException: Headers are read-only, response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.ThrowHeadersReadOnlyException()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpHeaders.Microsoft.AspNetCore.Http.IHeaderDictionary.set_Item(String key, StringValues value)
+   at Microsoft.AspNetCore.Http.Internal.DefaultHttpResponse.set_ContentType(String value)
+   at POC_Abhi.Middlewares.MyMiddleware.HandleExceptionMessageAsync(HttpContext context, Exception exception) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 39
+   at POC_Abhi.Middlewares.MyMiddleware.Invoke(HttpContext httpContext) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 34
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)|url: https://localhost/api/employee/6|action: UpdateEmployee
+2021-02-03 20:05:18.9443||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-03 20:05:20.3793||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-03 20:05:20.5545||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-03 20:05:21.3251||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-03 20:05:28.1251||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee/6|action: 
+2021-02-03 20:05:31.6370||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetEmployeeById method called!!! |url: https://localhost/api/employee/6|action: GetEmployeeById

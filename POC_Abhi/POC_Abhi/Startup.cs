@@ -47,13 +47,15 @@ namespace POC_Abhi
             app.UseHttpsRedirection();
             app.UseStatusCodePages();
             //Custom Middleware
-            //app.UseMiddleware<MyMiddleware>();
-            app.Map("/", endpoints =>
-             {
-                 endpoints.UseMiddleware<MyMiddleware>();
-                 endpoints.UseMiddleware<MyCustomMiddleware>();
-             });
-            app.UseMvc();            
+            
+            //app.UseMiddleware<MyCustomMiddleware>();
+            //app.Map("/custom", endpoints =>
+            // {
+            //     endpoints.UseMiddleware<MyMiddleware>();
+            //     endpoints.UseMiddleware<MyCustomMiddleware>();
+            // });
+            app.UseMvc();
+            app.UseMiddleware<MyMiddleware>();
         }
     }
 }

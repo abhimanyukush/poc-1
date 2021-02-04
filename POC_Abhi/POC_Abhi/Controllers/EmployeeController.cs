@@ -32,7 +32,7 @@ namespace POC_Abhi.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult GetEmployeeById(int id)
+        public IActionResult GetEmployeeById([FromRoute]int id)
         {
             _logger.LogInformation("EmployeeController.GetEmployeeById method called!!!");
             return Ok(_employeeRepository.GetEmployee(id));
@@ -43,7 +43,7 @@ namespace POC_Abhi.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult GetEmployeeByIdAndName(int id,string name)
+        public IActionResult GetEmployeeByIdAndName([FromRoute]int id,[FromQuery]string name)
         {
             _logger.LogInformation("EmployeeController.GetEmployeeByIdAndName method called!!!");
             return Ok(_employeeRepository.GetEmployeeByIdAndName(id,name));
@@ -53,7 +53,7 @@ namespace POC_Abhi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
-        public IActionResult PostEmployee(EmployeeModel model)
+        public IActionResult PostEmployee([FromBody]EmployeeModel model)
         {
             _logger.LogInformation("EmployeeController.PostEmployee method called!!!");
             if (!ModelState.IsValid)
@@ -69,7 +69,7 @@ namespace POC_Abhi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
-        public IActionResult UpdateEmployee(int id, [FromBody]EmployeeModel model)
+        public IActionResult UpdateEmployee([FromRoute]int id, [FromBody]EmployeeModel model)
         {
             _logger.LogInformation("EmployeeController.UpdateEmployee method called!!!");
             if (!ModelState.IsValid)
@@ -87,7 +87,7 @@ namespace POC_Abhi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
-        public IActionResult DeleteEmployee(int id)
+        public IActionResult DeleteEmployee([FromRoute]int id)
         {
             _logger.LogInformation("EmployeeController.DeleteEmployee method called!!!");
             _employeeRepository.DeleteEmployee(id);

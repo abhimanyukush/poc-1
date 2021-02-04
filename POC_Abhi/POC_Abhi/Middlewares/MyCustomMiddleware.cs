@@ -27,7 +27,7 @@ namespace POC_Abhi.Middlewares
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
     }

@@ -81,9 +81,9 @@ namespace DataAccessLayer.Services
         {
             try
             {
-                using (IDbConnection db = new SqlConnection(_sqlHelper.Connectionstring))
+                using (IDbConnection db = new SqlConnection(_sqlHelper.Connectionstring))//need to check
                 {
-                    using (var result = db.QueryMultiple(Constant.SP_FETCH_EMPLOYEE_BY_ID_AND_NAME, new { id = id, name = name }, commandType: CommandType.StoredProcedure))
+                    using (var result = db.QueryMultiple(Constant.SP_FETCH_EMPLOYEE_BY_ID_AND_NAME, new { id, name }, commandType: CommandType.StoredProcedure))
                     {
                         return result.Read<EmployeeModel>().FirstOrDefault();
                     }
@@ -91,8 +91,8 @@ namespace DataAccessLayer.Services
             }
             catch (Exception ex)
             {
-                _logger.LogInformation(ex, "Error Occured in EmployeeService.GetEmployeeByIdAndName!!");
-                throw;
+                //_logger.LogInformation(ex, "Error Occured in EmployeeService.GetEmployeeByIdAndName!!");
+                throw ex;
             }
         }
 

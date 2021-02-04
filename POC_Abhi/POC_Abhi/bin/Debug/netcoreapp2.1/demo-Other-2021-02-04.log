@@ -1,0 +1,8 @@
+2021-02-04 10:19:38.3144||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-04 10:19:44.4679||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-04 10:19:45.2164||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-04 10:19:46.9968||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-04 10:21:03.3577||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee/2|action: 
+2021-02-04 10:21:03.5582||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetEmployeeById method called!!! |url: https://localhost/api/employee/2|action: GetEmployeeById
+2021-02-04 13:55:19.4603||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-04 13:55:29.3970||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee

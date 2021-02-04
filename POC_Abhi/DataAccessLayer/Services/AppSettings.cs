@@ -6,9 +6,10 @@ namespace DataAccessLayer.Services
     {
         private readonly IConfiguration _config;
         public string Connectionstring { get; set; }
+        //private IHostEnvironment appSettings;
         public AppSettings(IConfiguration configuration)
         {
-            _config = configuration;
+            _config = configuration;            
             Connectionstring = _config.GetSection("ConnectionStrings:DefaultConnection").Value;
         }
     }
