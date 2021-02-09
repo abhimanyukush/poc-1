@@ -1,0 +1,5 @@
+2021-02-08 10:15:13.5235||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-08 10:15:18.0442||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-08 10:15:18.5612||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-08 10:15:19.5568||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-08 10:17:13.9245||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 

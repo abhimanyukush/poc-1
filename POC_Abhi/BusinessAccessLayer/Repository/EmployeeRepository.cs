@@ -1,10 +1,11 @@
-﻿using Common.Model;
-using DataAccessLayer.Services;
+﻿using BusinessLayer.Services;
+using Common;
+using Common.Model;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 
-namespace BusinessAccessLayer.Repository
+namespace RepositoryLayer.Repository
 {
     public class EmployeeRepository : IEmployeeRepository
     {
@@ -29,13 +30,12 @@ namespace BusinessAccessLayer.Repository
             try
             {
                  return _service.GetAllEmployee();
-
                 
             }
             catch(Exception ex)
             {
                 _logger.LogInformation(ex,"Error Occured in EmployeeRepository.GetAllEmployee!!");
-                throw;
+                throw ex;
             }
         }
 
@@ -48,13 +48,16 @@ namespace BusinessAccessLayer.Repository
         {
             try
             {
+                _logger.LogInformation("Fetch the employee with id: {id}",id);
+                var addResult = Calculator.Add(10, 20);
+                var fibResult = Calculator.Fibonaci(5);
                 return _service.GetEmployee(id);
 
             }
             catch (Exception ex)
             {
                 _logger.LogInformation(ex,"Error Occured in EmployeeRepository.GetEmployee!!");
-                throw;
+                throw ex;
             }
         }
 
@@ -74,7 +77,7 @@ namespace BusinessAccessLayer.Repository
             catch (Exception ex)
             {
                 _logger.LogInformation(ex, "Error Occured in EmployeeRepository.GetEmployeeByIdAndName!!");
-                throw;
+                throw ex;
             }
         }
 
@@ -93,7 +96,7 @@ namespace BusinessAccessLayer.Repository
             catch (Exception ex)
             {
                 _logger.LogInformation(ex,"Error Occured in EmployeeRepository.AddEmployee!!");
-                throw;
+                throw ex;
             }
         }
 
@@ -113,7 +116,7 @@ namespace BusinessAccessLayer.Repository
             catch (Exception ex)
             {
                 _logger.LogInformation(ex,"Error Occured in EmployeeRepository.UpdateEmployee!!");
-                throw;
+                throw ex;
             }
         }
 
@@ -132,9 +135,10 @@ namespace BusinessAccessLayer.Repository
             catch (Exception ex)
             {
                 _logger.LogInformation(ex,"Error Occured in EmployeeRepository.DeleteEmployee!!");
-                throw;
+                throw ex;
             }
         }
-               
+
+                      
     }
 }

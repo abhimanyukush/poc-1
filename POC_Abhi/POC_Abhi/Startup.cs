@@ -1,23 +1,24 @@
-﻿using BusinessAccessLayer.Repository;
-using DataAccessLayer.Services;
+﻿using BusinessLayer.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using POC_Abhi.Filters;
 using POC_Abhi.Middlewares;
+using RepositoryLayer.Repository;
 
 namespace POC_Abhi
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
+            Environment = environment;
         }
 
         public IConfiguration Configuration { get; set; }
+        public IHostingEnvironment Environment { get; set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -47,15 +48,10 @@ namespace POC_Abhi
             app.UseHttpsRedirection();
             app.UseStatusCodePages();
             //Custom Middleware
-            
-            //app.UseMiddleware<MyCustomMiddleware>();
-            //app.Map("/custom", endpoints =>
-            // {
-            //     endpoints.UseMiddleware<MyMiddleware>();
-            //     endpoints.UseMiddleware<MyCustomMiddleware>();
-            // });
-            app.UseMvc();
             app.UseMiddleware<MyMiddleware>();
+            app.UseMiddleware<MyCustomMiddleware>();            
+            app.UseMvc();
+            
         }
     }
 }

@@ -692,17 +692,7 @@
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
-      "Common/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/Common.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Common.dll": {}
-        }
-      },
-      "DataAccessLayer/1.0.0": {
+      "BusinessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
@@ -712,10 +702,20 @@
           "System.Data.SqlClient": "4.8.2"
         },
         "compile": {
-          "bin/placeholder/DataAccessLayer.dll": {}
+          "bin/placeholder/BusinessLayer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataAccessLayer.dll": {}
+          "bin/placeholder/BusinessLayer.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
         }
       }
     }
@@ -2050,20 +2050,20 @@
         "version.txt"
       ]
     },
+    "BusinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessLayer/BusinessLayer.csproj",
+      "msbuildProject": "../DataAccessLayer/BusinessLayer.csproj"
+    },
     "Common/1.0.0": {
       "type": "project",
       "path": "../Common/Common.csproj",
       "msbuildProject": "../Common/Common.csproj"
-    },
-    "DataAccessLayer/1.0.0": {
-      "type": "project",
-      "path": "../DataAccessLayer/DataAccessLayer.csproj",
-      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "DataAccessLayer >= 1.0.0",
+      "BusinessLayer >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "NLog.Web.AspNetCore >= 4.10.0"
     ]
@@ -2075,9 +2075,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\POC\\POC_Abhi\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
-      "projectName": "BusinessAccessLayer",
-      "projectPath": "D:\\POC\\POC_Abhi\\BusinessAccessLayer\\BusinessAccessLayer.csproj",
+      "projectUniqueName": "D:\\POC\\POC_Abhi\\BusinessAccessLayer\\RepositoryLayer.csproj",
+      "projectName": "RepositoryLayer",
+      "projectPath": "D:\\POC\\POC_Abhi\\BusinessAccessLayer\\RepositoryLayer.csproj",
       "packagesPath": "C:\\Users\\AbhimanyuKu\\.nuget\\packages\\",
       "outputPath": "D:\\POC\\POC_Abhi\\BusinessAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
@@ -2098,8 +2098,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\POC\\POC_Abhi\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "D:\\POC\\POC_Abhi\\DataAccessLayer\\DataAccessLayer.csproj"
+            "D:\\POC\\POC_Abhi\\DataAccessLayer\\BusinessLayer.csproj": {
+              "projectPath": "D:\\POC\\POC_Abhi\\DataAccessLayer\\BusinessLayer.csproj"
             }
           }
         }

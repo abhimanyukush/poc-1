@@ -4660,18 +4660,20 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "BusinessAccessLayer/1.0.0": {
+      "BusinessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "DataAccessLayer": "1.0.0",
-          "NLog.Web.AspNetCore": "4.10.0"
+          "Common": "1.0.0",
+          "Dapper": "2.0.78",
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "System.Data.SqlClient": "4.8.2"
         },
         "compile": {
-          "bin/placeholder/BusinessAccessLayer.dll": {}
+          "bin/placeholder/BusinessLayer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BusinessAccessLayer.dll": {}
+          "bin/placeholder/BusinessLayer.dll": {}
         }
       },
       "Common/1.0.0": {
@@ -4684,20 +4686,18 @@
           "bin/placeholder/Common.dll": {}
         }
       },
-      "DataAccessLayer/1.0.0": {
+      "RepositoryLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Common": "1.0.0",
-          "Dapper": "2.0.78",
-          "Microsoft.Extensions.Configuration": "2.1.1",
-          "System.Data.SqlClient": "4.8.2"
+          "BusinessLayer": "1.0.0",
+          "NLog.Web.AspNetCore": "4.10.0"
         },
         "compile": {
-          "bin/placeholder/DataAccessLayer.dll": {}
+          "bin/placeholder/RepositoryLayer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataAccessLayer.dll": {}
+          "bin/placeholder/RepositoryLayer.dll": {}
         }
       }
     }
@@ -12767,30 +12767,30 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "BusinessAccessLayer/1.0.0": {
+    "BusinessLayer/1.0.0": {
       "type": "project",
-      "path": "../BusinessAccessLayer/BusinessAccessLayer.csproj",
-      "msbuildProject": "../BusinessAccessLayer/BusinessAccessLayer.csproj"
+      "path": "../DataAccessLayer/BusinessLayer.csproj",
+      "msbuildProject": "../DataAccessLayer/BusinessLayer.csproj"
     },
     "Common/1.0.0": {
       "type": "project",
       "path": "../Common/Common.csproj",
       "msbuildProject": "../Common/Common.csproj"
     },
-    "DataAccessLayer/1.0.0": {
+    "RepositoryLayer/1.0.0": {
       "type": "project",
-      "path": "../DataAccessLayer/DataAccessLayer.csproj",
-      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+      "path": "../BusinessAccessLayer/RepositoryLayer.csproj",
+      "msbuildProject": "../BusinessAccessLayer/RepositoryLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "BusinessAccessLayer >= 1.0.0",
-      "DataAccessLayer >= 1.0.0",
+      "BusinessLayer >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9",
+      "RepositoryLayer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12823,11 +12823,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\POC\\POC_Abhi\\BusinessAccessLayer\\BusinessAccessLayer.csproj": {
-              "projectPath": "D:\\POC\\POC_Abhi\\BusinessAccessLayer\\BusinessAccessLayer.csproj"
+            "D:\\POC\\POC_Abhi\\BusinessAccessLayer\\RepositoryLayer.csproj": {
+              "projectPath": "D:\\POC\\POC_Abhi\\BusinessAccessLayer\\RepositoryLayer.csproj"
             },
-            "D:\\POC\\POC_Abhi\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "D:\\POC\\POC_Abhi\\DataAccessLayer\\DataAccessLayer.csproj"
+            "D:\\POC\\POC_Abhi\\DataAccessLayer\\BusinessLayer.csproj": {
+              "projectPath": "D:\\POC\\POC_Abhi\\DataAccessLayer\\BusinessLayer.csproj"
             }
           }
         }

@@ -24,3 +24,5 @@ D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.Assembly
 D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.csproj.CopyComplete
 D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.dll
 D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\DataAccessLayer.pdb
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Hosting.Abstractions.xml

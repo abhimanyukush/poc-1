@@ -1,6 +1,7 @@
 D:\POC\POC_Abhi\Common\bin\Debug\netcoreapp2.1\Common.deps.json
 D:\POC\POC_Abhi\Common\bin\Debug\netcoreapp2.1\Common.dll
 D:\POC\POC_Abhi\Common\bin\Debug\netcoreapp2.1\Common.pdb
+D:\POC\POC_Abhi\Common\obj\Debug\netcoreapp2.1\Common.csprojAssemblyReference.cache
 D:\POC\POC_Abhi\Common\obj\Debug\netcoreapp2.1\Common.csproj.CoreCompileInputs.cache
 D:\POC\POC_Abhi\Common\obj\Debug\netcoreapp2.1\Common.AssemblyInfoInputs.cache
 D:\POC\POC_Abhi\Common\obj\Debug\netcoreapp2.1\Common.AssemblyInfo.cs

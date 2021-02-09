@@ -1464,9 +1464,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\POC\\POC_Abhi\\DataAccessLayer\\DataAccessLayer.csproj",
-      "projectName": "DataAccessLayer",
-      "projectPath": "D:\\POC\\POC_Abhi\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "D:\\POC\\POC_Abhi\\DataAccessLayer\\BusinessLayer.csproj",
+      "projectName": "BusinessLayer",
+      "projectPath": "D:\\POC\\POC_Abhi\\DataAccessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\AbhimanyuKu\\.nuget\\packages\\",
       "outputPath": "D:\\POC\\POC_Abhi\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",

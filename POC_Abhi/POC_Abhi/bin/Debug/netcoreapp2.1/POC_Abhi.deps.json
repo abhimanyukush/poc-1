@@ -24,12 +24,12 @@
     ".NETCoreApp,Version=v2.1": {
       "POC_Abhi/1.0.0": {
         "dependencies": {
-          "BusinessAccessLayer": "1.0.0",
-          "DataAccessLayer": "1.0.0",
+          "BusinessLayer": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
+          "RepositoryLayer": "1.0.0"
         },
         "runtime": {
           "POC_Abhi.dll": {}
@@ -761,16 +761,18 @@
           }
         }
       },
-      "BusinessAccessLayer/1.0.0": {
+      "BusinessLayer/1.0.0": {
         "dependencies": {
-          "DataAccessLayer": "1.0.0",
-          "NLog.Web.AspNetCore": "4.10.0"
+          "Common": "1.0.0",
+          "Dapper": "2.0.78",
+          "Microsoft.Extensions.Configuration": "2.1.1",
+          "System.Data.SqlClient": "4.8.2"
         },
         "runtime": {
-          "BusinessAccessLayer.dll": {}
+          "BusinessLayer.dll": {}
         },
         "compile": {
-          "BusinessAccessLayer.dll": {}
+          "BusinessLayer.dll": {}
         }
       },
       "Common/1.0.0": {
@@ -781,18 +783,16 @@
           "Common.dll": {}
         }
       },
-      "DataAccessLayer/1.0.0": {
+      "RepositoryLayer/1.0.0": {
         "dependencies": {
-          "Common": "1.0.0",
-          "Dapper": "2.0.78",
-          "Microsoft.Extensions.Configuration": "2.1.1",
-          "System.Data.SqlClient": "4.8.2"
+          "BusinessLayer": "1.0.0",
+          "NLog.Web.AspNetCore": "4.10.0"
         },
         "runtime": {
-          "DataAccessLayer.dll": {}
+          "RepositoryLayer.dll": {}
         },
         "compile": {
-          "DataAccessLayer.dll": {}
+          "RepositoryLayer.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3954,7 +3954,7 @@
       "path": "system.text.encoding.codepages/4.7.0",
       "hashPath": "system.text.encoding.codepages.4.7.0.nupkg.sha512"
     },
-    "BusinessAccessLayer/1.0.0": {
+    "BusinessLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -3964,7 +3964,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "DataAccessLayer/1.0.0": {
+    "RepositoryLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -12,6 +12,7 @@
           "Dapper": "2.0.78",
           "Microsoft.Extensions.Configuration": "2.1.1",
           "System.Data.SqlClient": "4.8.2",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1.0",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1.0"
         },
         "runtime": {
@@ -241,6 +242,14 @@
           "Common.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Hosting.Abstractions/2.1.1.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Hosting.Abstractions.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.18157"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging.Abstractions/2.1.1.0": {
         "runtime": {
           "Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -385,6 +394,11 @@
     },
     "Common/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Hosting.Abstractions/2.1.1.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },

@@ -1,7 +1,7 @@
 ﻿using Common.Model;
 using System.Collections.Generic;
 
-namespace DataAccessLayer.Services
+namespace BusinessLayer.Services
 {
     public interface IEmployeeService
     {

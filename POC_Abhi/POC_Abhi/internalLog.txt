@@ -168,3 +168,223 @@
 2021-02-04 13:55:18.9766 Info Adding target FileTarget(Name=alldata)
 2021-02-04 13:55:19.0095 Info Adding target FileTarget(Name=otherFile-web)
 2021-02-04 13:55:19.1720 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 16:11:42.2445 Info Message Template Auto Format enabled
+2021-02-04 16:11:42.2640 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 16:11:42.3605 Info Adding target FileTarget(Name=alldata)
+2021-02-04 16:11:42.3736 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 16:11:42.4119 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 16:14:19.9856 Info Message Template Auto Format enabled
+2021-02-04 16:14:19.9856 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 16:14:20.0589 Info Adding target FileTarget(Name=alldata)
+2021-02-04 16:14:20.0667 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 16:14:20.1019 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 16:19:03.1608 Info Message Template Auto Format enabled
+2021-02-04 16:19:03.1608 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 16:19:03.2391 Info Adding target FileTarget(Name=alldata)
+2021-02-04 16:19:03.2391 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 16:19:03.2820 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 16:24:42.8681 Info Message Template Auto Format enabled
+2021-02-04 16:24:42.8822 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 16:24:42.9412 Info Adding target FileTarget(Name=alldata)
+2021-02-04 16:24:42.9503 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 16:24:42.9869 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 16:28:26.4506 Info Message Template Auto Format enabled
+2021-02-04 16:28:26.4646 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 16:28:26.5267 Info Adding target FileTarget(Name=alldata)
+2021-02-04 16:28:26.5351 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 16:28:26.5938 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 16:37:29.3063 Info Message Template Auto Format enabled
+2021-02-04 16:37:29.3287 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 16:37:29.4223 Info Adding target FileTarget(Name=alldata)
+2021-02-04 16:37:29.4661 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 16:37:29.5107 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 16:47:01.4430 Info Message Template Auto Format enabled
+2021-02-04 16:47:01.4430 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 16:47:01.5160 Info Adding target FileTarget(Name=alldata)
+2021-02-04 16:47:01.5294 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 16:47:01.5681 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 16:48:02.5214 Info Message Template Auto Format enabled
+2021-02-04 16:48:02.5387 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 16:48:02.6789 Info Adding target FileTarget(Name=alldata)
+2021-02-04 16:48:02.7406 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 16:48:02.8020 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:05:03.5590 Info Message Template Auto Format enabled
+2021-02-04 17:05:03.5940 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:05:03.6791 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:05:03.7296 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:05:03.7716 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:11:20.3224 Info Message Template Auto Format enabled
+2021-02-04 17:11:20.3392 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:11:20.4112 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:11:20.4225 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:11:20.4844 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:12:54.2368 Info Message Template Auto Format enabled
+2021-02-04 17:12:54.2368 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:12:54.3369 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:12:54.3489 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:12:54.3842 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:14:26.0515 Info Message Template Auto Format enabled
+2021-02-04 17:14:26.0644 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:14:26.1333 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:14:26.1333 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:14:26.1996 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:17:03.4317 Info Message Template Auto Format enabled
+2021-02-04 17:17:03.4492 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:17:03.5091 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:17:03.5091 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:17:03.5601 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:36:25.2191 Info Message Template Auto Format enabled
+2021-02-04 17:36:25.2313 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:36:25.2947 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:36:25.2947 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:36:25.3424 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:37:24.5001 Info Message Template Auto Format enabled
+2021-02-04 17:37:24.5152 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:37:24.5814 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:37:24.5911 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:37:24.6518 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:39:27.5658 Info Message Template Auto Format enabled
+2021-02-04 17:39:27.5792 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:39:27.6401 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:39:27.6486 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:39:27.6849 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:41:57.5867 Info Message Template Auto Format enabled
+2021-02-04 17:41:57.5990 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:41:57.6633 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:41:57.6633 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:41:57.7127 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:43:07.9745 Info Message Template Auto Format enabled
+2021-02-04 17:43:07.9864 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:43:08.0504 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:43:08.0608 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:43:08.0964 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:43:38.2368 Info Message Template Auto Format enabled
+2021-02-04 17:43:38.2614 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:43:38.3385 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:43:38.3492 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:43:38.3978 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 17:44:43.4285 Info Message Template Auto Format enabled
+2021-02-04 17:44:43.4406 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 17:44:43.5017 Info Adding target FileTarget(Name=alldata)
+2021-02-04 17:44:43.5093 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 17:44:43.5532 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 18:21:00.4523 Info Message Template Auto Format enabled
+2021-02-04 18:21:00.4670 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 18:21:00.5306 Info Adding target FileTarget(Name=alldata)
+2021-02-04 18:21:00.5410 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 18:21:00.5770 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 18:22:04.9909 Info Message Template Auto Format enabled
+2021-02-04 18:22:05.0033 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 18:22:05.0671 Info Adding target FileTarget(Name=alldata)
+2021-02-04 18:22:05.0671 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 18:22:05.1124 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 18:33:13.8612 Info Message Template Auto Format enabled
+2021-02-04 18:33:13.8803 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 18:33:13.9657 Info Adding target FileTarget(Name=alldata)
+2021-02-04 18:33:13.9934 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 18:33:14.0400 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 18:36:46.3097 Info Message Template Auto Format enabled
+2021-02-04 18:36:46.3253 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 18:36:46.3987 Info Adding target FileTarget(Name=alldata)
+2021-02-04 18:36:46.3987 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 18:36:46.4398 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 18:42:13.2398 Info Message Template Auto Format enabled
+2021-02-04 18:42:13.2659 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 18:42:13.3419 Info Adding target FileTarget(Name=alldata)
+2021-02-04 18:42:13.3567 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 18:42:13.4138 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 18:51:01.4606 Info Message Template Auto Format enabled
+2021-02-04 18:51:01.4906 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 18:51:01.5915 Info Adding target FileTarget(Name=alldata)
+2021-02-04 18:51:01.6107 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 18:51:01.6638 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 19:06:09.4211 Info Message Template Auto Format enabled
+2021-02-04 19:06:09.4676 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 19:06:09.5570 Info Adding target FileTarget(Name=alldata)
+2021-02-04 19:06:09.5651 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 19:06:09.6124 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 19:21:30.6229 Info Message Template Auto Format enabled
+2021-02-04 19:21:30.6476 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 19:21:30.7547 Info Adding target FileTarget(Name=alldata)
+2021-02-04 19:21:30.7650 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 19:21:30.8176 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 19:28:05.2554 Info Message Template Auto Format enabled
+2021-02-04 19:28:05.2706 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 19:28:05.3283 Info Adding target FileTarget(Name=alldata)
+2021-02-04 19:28:05.3534 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 19:28:05.4048 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 19:28:59.0379 Info Message Template Auto Format enabled
+2021-02-04 19:28:59.0523 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 19:28:59.1196 Info Adding target FileTarget(Name=alldata)
+2021-02-04 19:28:59.1347 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 19:28:59.1838 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 19:30:36.2015 Info Message Template Auto Format enabled
+2021-02-04 19:30:36.2238 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 19:30:36.3097 Info Adding target FileTarget(Name=alldata)
+2021-02-04 19:30:36.3324 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 19:30:36.3736 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 19:33:33.9448 Info Message Template Auto Format enabled
+2021-02-04 19:33:33.9596 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 19:33:34.0207 Info Adding target FileTarget(Name=alldata)
+2021-02-04 19:33:34.0287 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 19:33:34.0619 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 19:36:10.3871 Info Message Template Auto Format enabled
+2021-02-04 19:36:10.3871 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 19:36:10.4544 Info Adding target FileTarget(Name=alldata)
+2021-02-04 19:36:10.4650 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 19:36:10.4979 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 19:38:11.3063 Info Message Template Auto Format enabled
+2021-02-04 19:38:11.3187 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 19:38:11.3811 Info Adding target FileTarget(Name=alldata)
+2021-02-04 19:38:11.3987 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 19:38:11.4446 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-04 19:44:03.2879 Info Message Template Auto Format enabled
+2021-02-04 19:44:03.3092 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-04 19:44:03.4169 Info Adding target FileTarget(Name=alldata)
+2021-02-04 19:44:03.4361 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-04 19:44:03.4764 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-07 11:21:13.0508 Info Message Template Auto Format enabled
+2021-02-07 11:21:13.0739 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-07 11:21:13.1404 Info Adding target FileTarget(Name=alldata)
+2021-02-07 11:21:13.1906 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-07 11:21:13.2229 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-07 11:22:11.4769 Info Message Template Auto Format enabled
+2021-02-07 11:22:11.4918 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-07 11:22:11.5787 Info Adding target FileTarget(Name=alldata)
+2021-02-07 11:22:11.5964 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-07 11:22:11.6375 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-07 11:28:13.8186 Info Message Template Auto Format enabled
+2021-02-07 11:28:13.8323 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-07 11:28:13.9264 Info Adding target FileTarget(Name=alldata)
+2021-02-07 11:28:13.9264 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-07 11:28:13.9703 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-07 12:16:08.8164 Info Message Template Auto Format enabled
+2021-02-07 12:16:08.8350 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-07 12:16:08.9176 Info Adding target FileTarget(Name=alldata)
+2021-02-07 12:16:08.9290 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-07 12:16:08.9815 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-07 12:28:18.0541 Info Message Template Auto Format enabled
+2021-02-07 12:28:18.1038 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-07 12:28:18.1779 Info Adding target FileTarget(Name=alldata)
+2021-02-07 12:28:18.1863 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-07 12:28:18.2442 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-07 12:29:18.6447 Info Message Template Auto Format enabled
+2021-02-07 12:29:18.6662 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-07 12:29:18.7454 Info Adding target FileTarget(Name=alldata)
+2021-02-07 12:29:18.7554 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-07 12:29:18.8208 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-08 10:15:13.2169 Info Message Template Auto Format enabled
+2021-02-08 10:15:13.2765 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-08 10:15:13.3848 Info Adding target FileTarget(Name=alldata)
+2021-02-08 10:15:13.4205 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-08 10:15:13.4683 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-09 10:06:44.9666 Info Message Template Auto Format enabled
+2021-02-09 10:06:45.2073 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-09 10:06:46.1905 Info Adding target FileTarget(Name=alldata)
+2021-02-09 10:06:46.2656 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-09 10:06:46.4438 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config
+2021-02-09 15:18:02.3173 Info Message Template Auto Format enabled
+2021-02-09 15:18:02.3298 Info Loading assembly: NLog.Web.AspNetCore
+2021-02-09 15:18:02.3890 Info Adding target FileTarget(Name=alldata)
+2021-02-09 15:18:02.3890 Info Adding target FileTarget(Name=otherFile-web)
+2021-02-09 15:18:02.4429 Info Validating config: TargetNames=alldata, otherFile-web, ConfigItems=45, FilePath=D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\nlog.config

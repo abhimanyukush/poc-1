@@ -1,8 +1,8 @@
-﻿using BusinessAccessLayer.Repository;
-using Common.Model;
+﻿using Common.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using RepositoryLayer.Repository;
 
 namespace POC_Abhi.Controllers
 {
@@ -12,7 +12,7 @@ namespace POC_Abhi.Controllers
     {
         private readonly IEmployeeRepository _employeeRepository;
         private readonly ILogger<EmployeeController> _logger;
-
+                
         public EmployeeController(IEmployeeRepository employeeRepository, ILogger<EmployeeController> logger)
         {
             _employeeRepository = employeeRepository;
@@ -43,7 +43,7 @@ namespace POC_Abhi.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult GetEmployeeByIdAndName([FromRoute]int id,[FromQuery]string name)
+        public IActionResult GetEmployeeByIdAndName([FromRoute]int id, [FromRoute]string name)
         {
             _logger.LogInformation("EmployeeController.GetEmployeeByIdAndName method called!!!");
             return Ok(_employeeRepository.GetEmployeeByIdAndName(id,name));
@@ -53,6 +53,7 @@ namespace POC_Abhi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
         public IActionResult PostEmployee([FromBody]EmployeeModel model)
         {
             _logger.LogInformation("EmployeeController.PostEmployee method called!!!");

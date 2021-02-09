@@ -1,0 +1,123 @@
+2021-02-07 11:21:13.2601||DEBUG|POC_Abhi.Program|init main function 
+2021-02-07 11:21:20.5740||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\AbhimanyuKu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2021-02-07 11:21:21.3442|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57609/  0 
+2021-02-07 11:21:21.4326|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.6586ms 200  
+2021-02-07 11:21:36.3026|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/api/employee   
+2021-02-07 11:21:36.4505||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 11:21:37.4471||INFO|MyMiddleware|Error Occured in MyMiddleware System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'POC_Abhi.Controllers.EmployeeController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.<>c__DisplayClass12_0.<RouteAsync>b__0(HttpContext c)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at POC_Abhi.Middlewares.MyMiddleware.Invoke(HttpContext httpContext) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 29
+2021-02-07 11:21:37.7536|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1451.5555ms 500 application/json 
+2021-02-07 11:21:38.1759|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/favicon.ico   
+2021-02-07 11:21:38.1759||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 11:21:38.1759|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6.2711ms 404 text/plain 
+2021-02-07 11:22:11.6779||DEBUG|POC_Abhi.Program|init main function 
+2021-02-07 11:22:12.6109||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\AbhimanyuKu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2021-02-07 11:22:13.1301|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/api/employee   
+2021-02-07 11:22:13.1301|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57609/  0 
+2021-02-07 11:22:13.1711||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 11:22:13.1711|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41.1923ms 200  
+2021-02-07 11:22:13.3409|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployee() on controller POC_Abhi.Controllers.EmployeeController (POC_Abhi). 
+2021-02-07 11:22:13.3880|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) - Validation state: Valid 
+2021-02-07 11:22:13.3880||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! 
+2021-02-07 11:22:13.9618|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 570.8116ms. 
+2021-02-07 11:22:13.9707|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Common.Model.EmployeeModel, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2021-02-07 11:22:14.0148|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) in 671.9317ms 
+2021-02-07 11:22:14.0260|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 896.9682ms 200 application/json; charset=utf-8 
+2021-02-07 11:22:14.0515|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/favicon.ico   
+2021-02-07 11:22:14.0515||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 11:22:14.0515|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.916ms 404 text/plain 
+2021-02-07 11:28:14.0045||DEBUG|POC_Abhi.Program|init main function 
+2021-02-07 11:28:15.0032||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\AbhimanyuKu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2021-02-07 11:28:15.4466|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57609/  0 
+2021-02-07 11:28:15.4788|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.2629ms 200  
+2021-02-07 11:28:15.8371|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/api/employee   
+2021-02-07 11:28:15.8564||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 11:28:16.0552|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployee() on controller POC_Abhi.Controllers.EmployeeController (POC_Abhi). 
+2021-02-07 11:28:16.1036|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) - Validation state: Valid 
+2021-02-07 11:28:16.1036||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! 
+2021-02-07 11:28:16.5900|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 482.7819ms. 
+2021-02-07 11:28:16.5989|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Common.Model.EmployeeModel, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2021-02-07 11:28:16.6446|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) in 585.2568ms 
+2021-02-07 11:28:16.6446|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 818.1586ms 200 application/json; charset=utf-8 
+2021-02-07 11:28:16.6885|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/favicon.ico   
+2021-02-07 11:28:16.6885||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 11:28:16.6916|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.1593ms 404 text/plain 
+2021-02-07 12:16:09.0412||DEBUG|POC_Abhi.Program|init main function 
+2021-02-07 12:16:10.1863||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\AbhimanyuKu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2021-02-07 12:16:10.6604|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/api/employee   
+2021-02-07 12:16:10.6604|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57609/  0 
+2021-02-07 12:16:10.7109||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 12:16:10.7109|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.5545ms 200  
+2021-02-07 12:16:10.9055|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployee() on controller POC_Abhi.Controllers.EmployeeController (POC_Abhi). 
+2021-02-07 12:16:10.9523|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) - Validation state: Valid 
+2021-02-07 12:16:10.9523||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! 
+2021-02-07 12:16:11.4210|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 466.1928ms. 
+2021-02-07 12:16:11.4295|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Common.Model.EmployeeModel, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2021-02-07 12:16:11.4808|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) in 572.8119ms 
+2021-02-07 12:16:11.4926|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 832.948ms 200 application/json; charset=utf-8 
+2021-02-07 12:16:11.5217|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/favicon.ico   
+2021-02-07 12:16:11.5217||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 12:16:11.5217|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.4709ms 404 text/plain 
+2021-02-07 12:16:22.5496|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/api/employee application/json 141 
+2021-02-07 12:16:22.5513||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 12:16:22.5513|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployee() on controller POC_Abhi.Controllers.EmployeeController (POC_Abhi). 
+2021-02-07 12:16:22.5513|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) - Validation state: Valid 
+2021-02-07 12:16:22.5513||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! 
+2021-02-07 12:16:22.5779|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.1319ms. 
+2021-02-07 12:16:22.5779|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Common.Model.EmployeeModel, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2021-02-07 12:16:22.5779|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) in 23.6627ms 
+2021-02-07 12:16:22.5779|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.8417ms 200 application/json; charset=utf-8 
+2021-02-07 12:16:22.5886|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM6B6G6V6TAI", Request id "0HM6B6G6V6TAI:00000002": the application completed without reading the entire request body. 
+2021-02-07 12:28:18.4603||DEBUG|POC_Abhi.Program|init main function 
+2021-02-07 12:28:19.6445||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\AbhimanyuKu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2021-02-07 12:28:20.1310|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57609/  0 
+2021-02-07 12:28:20.1310|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/api/employee   
+2021-02-07 12:28:20.1736||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 12:28:20.1736|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.8156ms 200  
+2021-02-07 12:28:20.4153|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployee() on controller POC_Abhi.Controllers.EmployeeController (POC_Abhi). 
+2021-02-07 12:28:20.4802|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) - Validation state: Valid 
+2021-02-07 12:28:20.4802||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! 
+2021-02-07 12:28:20.9530|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 470.329ms. 
+2021-02-07 12:28:20.9530|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Common.Model.EmployeeModel, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2021-02-07 12:28:21.0060|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) in 586.8704ms 
+2021-02-07 12:28:21.0149|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 884.7314ms 200 application/json; charset=utf-8 
+2021-02-07 12:28:21.0452|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/favicon.ico   
+2021-02-07 12:28:21.0452||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 12:28:21.0452|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.3076ms 404 text/plain 
+2021-02-07 12:29:18.8782||DEBUG|POC_Abhi.Program|init main function 
+2021-02-07 12:29:19.7489||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\AbhimanyuKu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2021-02-07 12:29:20.1119|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:57609/  0 
+2021-02-07 12:29:20.1435|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.754ms 200  
+2021-02-07 12:29:20.5380|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/api/employee   
+2021-02-07 12:29:20.5501||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 12:29:20.8008|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllEmployee() on controller POC_Abhi.Controllers.EmployeeController (POC_Abhi). 
+2021-02-07 12:29:20.8498|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) - Validation state: Valid 
+2021-02-07 12:29:20.8498||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! 
+2021-02-07 12:29:21.3203|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 466.735ms. 
+2021-02-07 12:29:21.3326|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Common.Model.EmployeeModel, Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2021-02-07 12:29:21.3858|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action POC_Abhi.Controllers.EmployeeController.GetAllEmployee (POC_Abhi) in 582.5281ms 
+2021-02-07 12:29:21.3988|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 860.9614ms 200 application/json; charset=utf-8 
+2021-02-07 12:29:21.4268|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/favicon.ico   
+2021-02-07 12:29:21.4268||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 12:29:21.4268|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.5348ms 404 text/plain 
+2021-02-07 12:29:27.7042|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:44394/api/employee/3 application/json 141 
+2021-02-07 12:29:27.7042||INFO|MyMiddleware|MyMiddleware executing... 
+2021-02-07 12:29:27.7042|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetEmployeeById", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetEmployeeById(Int32) on controller POC_Abhi.Controllers.EmployeeController (POC_Abhi). 
+2021-02-07 12:29:27.7320|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method POC_Abhi.Controllers.EmployeeController.GetEmployeeById (POC_Abhi) - Validation state: Valid 
+2021-02-07 12:29:27.7320||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetEmployeeById method called!!! 
+2021-02-07 12:29:34.7472||INFO|RepositoryLayer.Repository.EmployeeRepository|Fetch the employee with id: 3 
+2021-02-07 12:30:28.2526|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method POC_Abhi.Controllers.EmployeeController.GetEmployeeById (POC_Abhi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 60532.2337ms. 
+2021-02-07 12:30:28.2526|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Common.Model.EmployeeModel'. 
+2021-02-07 12:30:28.2526|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action POC_Abhi.Controllers.EmployeeController.GetEmployeeById (POC_Abhi) in 60560.7489ms 
+2021-02-07 12:30:28.2526|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60573.3767ms 200 application/json; charset=utf-8 
+2021-02-07 12:30:28.2836|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM6B6NI827HH", Request id "0HM6B6NI827HH:00000004": the application completed without reading the entire request body. 

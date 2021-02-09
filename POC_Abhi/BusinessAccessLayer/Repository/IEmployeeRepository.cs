@@ -1,7 +1,7 @@
 ﻿using Common.Model;
 using System.Collections.Generic;
 
-namespace BusinessAccessLayer.Repository
+namespace RepositoryLayer.Repository
 {
     public interface IEmployeeRepository
     {

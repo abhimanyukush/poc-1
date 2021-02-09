@@ -1,0 +1,11 @@
+2021-02-09 10:06:46.9559||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-09 10:07:12.0121||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-09 10:07:13.4987||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-09 10:07:16.1642||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-09 15:18:02.4802||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-09 15:18:05.8336||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-09 15:18:06.3447||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-09 15:18:12.2339||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-09 15:18:18.3741||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee/2|action: 
+2021-02-09 15:18:18.5616||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetEmployeeById method called!!! |url: https://localhost/api/employee/2|action: GetEmployeeById
+2021-02-09 15:18:21.5888||INFO|RepositoryLayer.Repository.EmployeeRepository|Fetch the employee with id: 2 |url: https://localhost/api/employee/2|action: GetEmployeeById

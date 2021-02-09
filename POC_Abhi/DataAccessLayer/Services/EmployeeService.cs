@@ -1,5 +1,6 @@
 ﻿using Common.Model;
 using Dapper;
+using DataAccessLayer;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -7,23 +8,23 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 
-namespace DataAccessLayer.Services
+namespace BusinessLayer.Services
 {
-    public class EmployeeService : IEmployeeService
+    public class EmployeeService : IEmployeeService,IDisposable
     {
-        private readonly IAppSettings _sqlHelper;
-        private readonly ILogger<EmployeeService> _logger;
-        //public IConfiguration Configuration _configuration;
+        private readonly IAppSettings _appSettings;
+        //private readonly ILogger<EmployeeService> _logger;
+        IDbConnection db = null;
 
         /// <summary>
         /// initialize constructor
         /// </summary>
         /// <param name="sqlHelper"></param>
-        public EmployeeService(IAppSettings sqlHelper, ILogger<EmployeeService> logger)
+        public EmployeeService(IAppSettings appSettings)
         {
-            _sqlHelper = sqlHelper;
-            _logger = logger;
-            //var conn = _configuration["ConnectionStrings:DefaultConnection"];
+            _appSettings = appSettings;
+            //_logger = logger;
+            db = new SqlConnection(_appSettings.Connectionstring);
         }
 
         /// <summary>
@@ -32,19 +33,8 @@ namespace DataAccessLayer.Services
         /// <returns>list of employees</returns>
         public List<EmployeeModel> GetAllEmployee()
         {
-            try
-            {
-                using (IDbConnection db = new SqlConnection(_sqlHelper.Connectionstring))
-                {
-                    using (var result = db.QueryMultiple(Constant.SP_FETCH_ALL_EMPLOYEES, commandType: CommandType.StoredProcedure))
-                        return result.Read<EmployeeModel>().ToList();
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogInformation(ex,"Error Occured in EmployeeService.GetAllEmployee!!");
-                throw;
-            }
+            return db.Query<EmployeeModel>(Constant.SP_FETCH_ALL_EMPLOYEES, commandType: CommandType.StoredProcedure).ToList();                
+
         }
 
         /// <summary>
@@ -54,21 +44,8 @@ namespace DataAccessLayer.Services
         /// <returns>employee object</returns>
         public EmployeeModel GetEmployee(int id)
         {
-            try
-            {
-                using (IDbConnection db = new SqlConnection(_sqlHelper.Connectionstring))
-                {
-                    using (var result = db.QueryMultiple(Constant.SP_FETCH_EMPLOYEE_BY_ID, new { id = id }, commandType: CommandType.StoredProcedure))
-                    {
-                        return result.Read<EmployeeModel>().FirstOrDefault();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogInformation(ex,"Error Occured in EmployeeService.GetEmployee!!");
-                throw;
-            }             
+            return db.Query<EmployeeModel>(Constant.SP_FETCH_EMPLOYEE_BY_ID, new { id }, commandType: CommandType.StoredProcedure).SingleOrDefault();
+
         }
 
         /// <summary>
@@ -79,21 +56,8 @@ namespace DataAccessLayer.Services
         /// <returns></returns>
         public EmployeeModel GetEmployeeByIdAndName(int id, string name)
         {
-            try
-            {
-                using (IDbConnection db = new SqlConnection(_sqlHelper.Connectionstring))//need to check
-                {
-                    using (var result = db.QueryMultiple(Constant.SP_FETCH_EMPLOYEE_BY_ID_AND_NAME, new { id, name }, commandType: CommandType.StoredProcedure))
-                    {
-                        return result.Read<EmployeeModel>().FirstOrDefault();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                //_logger.LogInformation(ex, "Error Occured in EmployeeService.GetEmployeeByIdAndName!!");
-                throw ex;
-            }
+            return db.Query<EmployeeModel>(Constant.SP_FETCH_EMPLOYEE_BY_ID_AND_NAME, new { id, name }, commandType: CommandType.StoredProcedure).SingleOrDefault();
+
         }
 
         /// <summary>
@@ -103,31 +67,20 @@ namespace DataAccessLayer.Services
         /// <returns>int</returns>
         public int AddEmployee(EmployeeModel model)
         {
-            try
-            {
-                using (IDbConnection db = new SqlConnection(_sqlHelper.Connectionstring))
-                {
-                    var parameter = new DynamicParameters();
-                    parameter.Add("@Id", model.Id, dbType: DbType.Int32, direction: ParameterDirection.InputOutput);
-                    parameter.Add("@Name", model.Name);
-                    parameter.Add("@Gender", model.Gender);
-                    parameter.Add("@Salary", model.Salary);
-                    parameter.Add("@Age", model.Age);
-                    parameter.Add("@Country", model.Country);
-                    parameter.Add("@Email", model.Email);
+            var parameter = new DynamicParameters();
+            parameter.Add("@Id", model.Id, dbType: DbType.Int32, direction: ParameterDirection.InputOutput);
+            parameter.Add("@Name", model.Name);
+            parameter.Add("@Gender", model.Gender);
+            parameter.Add("@Salary", model.Salary);
+            parameter.Add("@Age", model.Age);
+            parameter.Add("@Country", model.Country);
+            parameter.Add("@Email", model.Email);
 
-                    db.Execute(Constant.SP_CREATE_EMPLOYEE, parameter, commandType: CommandType.StoredProcedure);
+            db.Execute(Constant.SP_CREATE_EMPLOYEE, parameter, commandType: CommandType.StoredProcedure) ;
 
-                    //To get newly created ID back  
-                    model.Id = parameter.Get<int>("@Id");
-                    return model.Id;
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogInformation(ex, "Error Occured in EmployeeService.AddEmployee!!");
-                throw;
-            }
+            //To get newly created ID back  
+            model.Id = parameter.Get<int>("@Id");
+            return model.Id;
 
         }
 
@@ -139,19 +92,7 @@ namespace DataAccessLayer.Services
         /// <returns>int</returns>
         public int UpdateEmployee(int id, string name)
         {
-            try
-            {
-                using (IDbConnection db = new SqlConnection(_sqlHelper.Connectionstring))
-                {
-                    return db.Execute(Constant.SP_UPDATE_EMPLOYEE_BY_ID, new { id = id,name=name }, commandType: CommandType.StoredProcedure);
-                       
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogInformation(ex, "Error Occured in EmployeeService.UpdateEmployee!!");
-                throw;
-            }
+            return db.Execute(Constant.SP_UPDATE_EMPLOYEE_BY_ID, new { id, name }, commandType: CommandType.StoredProcedure);
         }
 
         /// <summary>
@@ -161,19 +102,12 @@ namespace DataAccessLayer.Services
         /// <returns></returns>
         public int DeleteEmployee(int id)
         {
-            try
-            {
-                using (IDbConnection db = new SqlConnection(_sqlHelper.Connectionstring))
-                {
-                    return db.Execute(Constant.SP_DELETE_EMPLOYEE_BY_ID, new { id = id }, commandType: CommandType.StoredProcedure);
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogInformation(ex, "Error Occured in EmployeeService.DeleteEmployee!!");
-                throw;
-            }            
+            return db.Execute(Constant.SP_DELETE_EMPLOYEE_BY_ID, new { id }, commandType: CommandType.StoredProcedure);
         }
-                
+
+        public void Dispose()
+        {
+            db.Close();
+        }
     }
 }

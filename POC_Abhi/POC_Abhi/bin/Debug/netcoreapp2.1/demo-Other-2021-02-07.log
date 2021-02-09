@@ -1,0 +1,40 @@
+2021-02-07 11:21:13.2601||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-07 11:21:36.4505||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-07 11:21:37.4471||INFO|MyMiddleware|Error Occured in MyMiddleware System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'POC_Abhi.Controllers.EmployeeController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.<>c__DisplayClass12_0.<RouteAsync>b__0(HttpContext c)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at POC_Abhi.Middlewares.MyMiddleware.Invoke(HttpContext httpContext) in D:\POC\POC_Abhi\POC_Abhi\Middlewares\MyMiddleware.cs:line 29|url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-07 11:21:38.1759||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-07 11:22:11.6779||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-07 11:22:13.1711||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-07 11:22:13.3880||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-07 11:22:14.0515||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-07 11:28:14.0045||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-07 11:28:15.8564||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-07 11:28:16.1036||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-07 11:28:16.6885||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-07 12:16:09.0412||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-07 12:16:10.7109||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-07 12:16:10.9523||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-07 12:16:11.5217||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-07 12:16:22.5513||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-07 12:16:22.5513||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-07 12:28:18.4603||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-07 12:28:20.1736||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-07 12:28:20.4802||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-07 12:28:21.0452||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-07 12:29:18.8782||DEBUG|POC_Abhi.Program|init main function |url: |action: 
+2021-02-07 12:29:20.5501||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee|action: 
+2021-02-07 12:29:20.8498||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetAllEmployee method called!!! |url: https://localhost/api/employee|action: GetAllEmployee
+2021-02-07 12:29:21.4268||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/favicon.ico|action: 
+2021-02-07 12:29:27.7042||INFO|MyMiddleware|MyMiddleware executing... |url: https://localhost/api/employee/3|action: 
+2021-02-07 12:29:27.7320||INFO|POC_Abhi.Controllers.EmployeeController|EmployeeController.GetEmployeeById method called!!! |url: https://localhost/api/employee/3|action: GetEmployeeById
+2021-02-07 12:29:34.7472||INFO|RepositoryLayer.Repository.EmployeeRepository|Fetch the employee with id: 3 |url: https://localhost/api/employee/3|action: GetEmployeeById

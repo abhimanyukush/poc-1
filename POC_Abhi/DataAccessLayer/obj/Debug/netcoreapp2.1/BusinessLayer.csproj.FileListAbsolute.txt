@@ -1,0 +1,16 @@
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.deps.json
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.dll
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.pdb
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\Common.dll
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\Common.pdb
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\POC\POC_Abhi\DataAccessLayer\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Logging.Abstractions.xml
+D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csprojAssemblyReference.cache
+D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.AssemblyInfoInputs.cache
+D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.AssemblyInfo.cs
+D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csproj.CopyComplete
+D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.dll
+D:\POC\POC_Abhi\DataAccessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.pdb

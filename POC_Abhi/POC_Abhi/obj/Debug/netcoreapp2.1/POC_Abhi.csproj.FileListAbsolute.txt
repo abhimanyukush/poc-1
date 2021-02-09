@@ -23,11 +23,11 @@ D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\POC_Abhi.runtimeconfig.json
 D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\POC_Abhi.runtimeconfig.dev.json
 D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\POC_Abhi.dll
 D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\POC_Abhi.pdb
-D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\BusinessAccessLayer.dll
+D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\BusinessLayer.dll
 D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\Common.dll
-D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\DataAccessLayer.dll
-D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\BusinessAccessLayer.pdb
-D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\DataAccessLayer.pdb
+D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\RepositoryLayer.dll
+D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\RepositoryLayer.pdb
+D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\BusinessLayer.pdb
 D:\POC\POC_Abhi\POC_Abhi\bin\Debug\netcoreapp2.1\Common.pdb
 D:\POC\POC_Abhi\POC_Abhi\obj\Debug\netcoreapp2.1\POC_Abhi.csprojAssemblyReference.cache
 D:\POC\POC_Abhi\POC_Abhi\obj\Debug\netcoreapp2.1\POC_Abhi.csproj.CoreCompileInputs.cache

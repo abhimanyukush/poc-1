@@ -1,4 +1,4 @@
-﻿namespace DataAccessLayer.Services
+﻿namespace BusinessLayer.Services
 {
     public interface IAppSettings
     {
